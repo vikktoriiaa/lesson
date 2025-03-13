@@ -13,8 +13,11 @@
 }
 
 .container__text {
+    margin-top: 172px;
+    margin-left: 505px;
+    margin-right: 505px;
     text-align: center;
-    max-width: 449px;
+    max-width: 439px;
     width: 100%;
 }
 
