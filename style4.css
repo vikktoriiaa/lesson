@@ -5,3 +5,63 @@
     border: 0;
     box-sizing: border-box;
 }
+
+.container {
+    background-color: #fff;
+    width: 1280px;
+    margin: 172px 80px 427px;
+}
+
+.container__text {
+    text-align: center;
+    max-width: 449px;
+    width: 100%;
+}
+
+.features {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+
+}
+.features__restangle-one, .features__restangle-two, .features__restangle-three, .features__restangle-four, .features__restangle-five, .features__restangle-six {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.features__restangle-one {
+    background-color: #21F7EC;
+}
+
+.features__restangle-two {
+    background-color: #33D3BC;
+}
+
+.features__restangle-three {
+    background-color: #18A5C6;
+}
+
+.features__restangle-four {
+    background-color: #D38F62;
+}
+
+.features__restangle-five {
+    background-color: #F94C43;
+}
+
+.features__restangle-six {
+    background-color: #D399FF;
+}
+
+.features__txt {
+    max-width: 150px;
+    width: 100%;
+}
