@@ -24,11 +24,8 @@
 
 .features {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
 }
 
 li {
