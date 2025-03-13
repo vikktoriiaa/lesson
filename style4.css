@@ -13,6 +13,7 @@
 }
 
 .container__text {
+    font: 400 36px/100% "Roboto", sans-serif;
     margin-top: 172px;
     margin-left: 505px;
     margin-right: 505px;
@@ -65,6 +66,7 @@ li {
 }
 
 .features__txt {
-    max-width: 150px;
+    max-width: 190px;
     width: 100%;
+    font: 700 30px/100% "Roboto", sans-serif;
 }
