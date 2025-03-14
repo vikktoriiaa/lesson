@@ -84,12 +84,34 @@ li {
     }
 }
 
-.features__txt-two {
+.content {
+    background-color: #f0f0f0;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.interviews__text {
     max-width: 705px; 
     width: 100%;
     font: 700 36px/100% "Roboto", sans-serif;
     text-align: center;
     margin-left: 368px;
     margin-right: 368px;
+    margin-bottom: 102px;
+}
+
+.interviews__card {
+    display: inline-block;
+    max-width: 288px;
+    width: 100%;
+    margin-right: 113px;
+&:last-child {
+    margin-right: 0;
+}
+}
+
+.interviews__card-img {
+    width: 288px;
+    margin-bottom: 35px;
 }
    
