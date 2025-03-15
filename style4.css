@@ -9,11 +9,15 @@
 .container {
     background-color: #fff;
     width: 1280px;
-    margin: 172px 80px 427px;
+    margin-top: 172px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .container__text {
-    font: 400 36px/100% "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
     margin-top: 172px;
     margin-right: 415px;
     margin-left: 415px;
@@ -23,7 +27,7 @@
 }
 
 .features {
-    margin: 172px 80px 427px;
+    margin: 172px 80px 52px;
 }
 
 li {
@@ -73,10 +77,12 @@ li {
 .features__txt {
     max-width: 190px;
     width: 100%;
-    font: 700 30px/100% "Roboto", sans-serif;
     margin-right: 85px;
     margin-left: 85px;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
 
 &:first-child {
     margin-right: 96px;
@@ -84,16 +90,18 @@ li {
     }
 }
 
-.content {
-    background-color: #f0f0f0;
+.interviews {
     max-width: 1440px;
     width: 100%;
+    background: linear-gradient( #fff 50%, #F0F0F0 50%);
 }
 
 .interviews__text {
     max-width: 705px; 
     width: 100%;
-    font: 700 36px/100% "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
     text-align: center;
     margin-left: 368px;
     margin-right: 368px;
@@ -104,7 +112,8 @@ li {
     display: inline-block;
     max-width: 288px;
     width: 100%;
-    margin-right: 113px;
+    margin-right: 100px;
+    margin-left: 100px;
 &:last-child {
     margin-right: 0;
 }
@@ -114,4 +123,36 @@ li {
     width: 288px;
     margin-bottom: 35px;
 }
-   
+
+.interviews__card-quote {
+    font-family: "Roboto", sans-serif; 
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+}
+
+.interviews__card-name {
+    display: inline-block;
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 44px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.interviews__card-link {
+    display: inline-block;
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 52px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
