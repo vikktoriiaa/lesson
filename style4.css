@@ -42,11 +42,12 @@ li {
 
 .features__item{
     display: inline-block;
-    align-items: center;
     flex-wrap: wrap;
     max-width: 337px;
     width: 100%;
     margin-bottom: 110px;
+    margin-right: 24px;
+    text-align: center;
 }
 
 .features__restangle-one, .features__restangle-two, .features__restangle-three, .features__restangle-four, .features__restangle-five, .features__restangle-six {
@@ -80,18 +81,12 @@ li {
     background-color: #D399FF;
 }
 
-.features__txt {
-    max-width: 190px;
+.features__txt, .features__text {
+    max-width: 217px;
     width: 100%;
-    margin-right: 85px;
-    margin-left: 85px;
-    text-align: center;
     font: 700 30px/100% "Roboto", sans-serif;
-
-&:first-child {
-    margin-right: 96px;
-    margin-left: 96px;
-    }
+    margin-right: 65px;
+    margin-left: 65px; 
 }
 
 .interviews {
@@ -101,12 +96,12 @@ li {
 }
 
 .interviews__text {
-    max-width: 705px; 
+    max-width: 740px; 
     width: 100%;
     font: 700 36px/100% "Roboto", sans-serif;
     text-align: center;
-    margin-left: 368px;
-    margin-right: 368px;
+    margin-left: 355px;
+    margin-right: 355px;
     margin-bottom: 102px;
 }
 
