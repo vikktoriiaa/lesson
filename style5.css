@@ -16,7 +16,7 @@
 
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-left: 22px;
 }
 
@@ -32,16 +32,17 @@
 .content__info {
     max-width: 313px;
     width: 100%;
-    margin-top: 96px;
-    margin-left: 22px;
+    margin-top: 20px;
+&:first-child {
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
-.content__info.content__info_active:hover {
-    max-width: 313px;
-    width: 100%;
-    margin-top: 96px;
-    margin-left: 22px;
+.content__info:hover {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
+ 
 .content__info-time {
     color: #BE1736;
     font: 600 12px/100% "Montserrat", sans-serif;
@@ -91,6 +92,7 @@
 }
 
 .content__info-button {
+    font: 400 14px/100% "Montserrat", sans-serif;
     width: 262px;
     height: 50px;
     margin: 30px 25px 28px;
@@ -99,6 +101,7 @@
 }
 
 .content__info-button_active {
+    font: 400 14px/100% "Montserrat", sans-serif;
     width: 262px;
     height: 50px;
     margin: 30px 25px 28px;
@@ -111,9 +114,55 @@
     color: #000;
 }
 
-
-
 .button {
     width: 260px;
+    height: 50px;
     border: 2px solid #575756;
+    margin-top: 50px;
+    margin-right: 544px;
+    margin-left: 544px;
+}
+
+.button-link {
+    font: 400 14px/100% "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 19px 22px 15px;
+    max-width: 1309px;
+    width: 100%;
+}
+
+.contents__block-img {
+    width: 644px;
+    border: 1px dashed #999;
+    margin-right: 91px;
+    margin-top: 30px;
+}
+
+.contents__txt-title {
+    width: 496px;
+    font: 600 24px/29px "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.contents__txt-term {
+    max-width: 496px; 
+    width: 100%;
+    font: 600 18px/22px "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+.contents__txt-item {
+    max-width: 573px;
+    width: 100%;
+    margin-bottom: 30px;
+    font: 400 14px/17px "Montserrat", sans-serif;
+&:last-child {
+    margin-bottom: 0;
+}
 }
