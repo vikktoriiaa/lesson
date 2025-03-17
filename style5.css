@@ -1,0 +1,119 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 22px;
+}
+
+.content__text {
+    font: 600 24px/100% "Montserrat", sans-serif;
+    max-width: 496px;
+    width: 100%;
+    margin-top: 47px;
+    margin-left: 22px;
+    display: inline-block;
+}
+
+.content__info {
+    max-width: 313px;
+    width: 100%;
+    margin-top: 96px;
+    margin-left: 22px;
+}
+
+.content__info.content__info_active:hover {
+    max-width: 313px;
+    width: 100%;
+    margin-top: 96px;
+    margin-left: 22px;
+}
+.content__info-time {
+    color: #BE1736;
+    font: 600 12px/100% "Montserrat", sans-serif;
+    margin: 28px 30px 377px 214px;
+}
+
+.content__info-img {
+    width: 125px;
+    margin: 20px 100px 30px 86px;
+}
+
+.content__info-img_active {
+    width: 125px;
+    margin: 12px 100px 23px 86px;
+}
+
+.content__info-card-title {
+    max-width: 213px;
+    width: 100%;
+    margin-right: 56px;
+    margin-left: 42px;
+    margin-bottom: 30px;
+    text-align: center;
+    font: 600 16px/100% "Montserrat", sans-serif;
+    
+}
+
+.content__info-card-text {
+    max-width: 298px;
+    width: 100%;
+    margin-right: 7px;
+    margin-left: 7px;
+    font: 400 14px/20px "Montserrat", sans-serif;
+}
+
+.content__info-card-txt, .content__info-card-txt_active {
+    font: 600 14px/20px "Montserrat", sans-serif;
+}
+
+.content__info-card-txt_active {
+    color:#1455D8;
+}
+
+.button-link {
+    text-decoration: none;
+    font: 400 14px/100% "Montserrat", sans-serif;
+}
+
+.content__info-button {
+    width: 262px;
+    height: 50px;
+    margin: 30px 25px 28px;
+    background-color: #fff;
+    
+}
+
+.content__info-button_active {
+    width: 262px;
+    height: 50px;
+    margin: 30px 25px 28px;
+    border: 2px solid #575756;
+}
+
+.content__info-button-link {
+    text-decoration: none;
+    font: 400 14px/100% "Montserrat", sans-serif;
+    color: #000;
+}
+
+
+
+.button {
+    width: 260px;
+    border: 2px solid #575756;
+}
