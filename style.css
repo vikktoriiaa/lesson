@@ -42,6 +42,13 @@ a {
   border: 20px solid #3D8455;
 }
 
+.img {
+  width: 223px;
+  position: absolute;
+  top: 18px;
+  left: 315px;
+}
+
 .content {
   position: absolute;
   top: 115px;
