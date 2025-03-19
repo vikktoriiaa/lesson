@@ -65,34 +65,26 @@ a {
   margin-bottom: 23px;
 }
 
-.content__item-1 , .content__item-2 {
-  max-width: 460px;
+.content__card {
+  display: flex;
+  position: absolute;
+  top: 312px;
+}
+
+.content__card-2 {
+  display: flex;
+  position: absolute;
+  top: 350px;  
+}
+
+.content__card-img, .content__card-2-img {
+  margin-right: 3px;
+}
+
+.content__card-item , .content__card-2-item {
+  max-width: 476px;
   width: 100%;
   font: 500 20px/28px "Roboto" , sans-serif;
-  color: #26292E;
-  position: relative;
-  left: 704px;
-}
-
-.content__item-1 {
-  top: 444px;
-}
-
-.content__item-2 {
-  top: 484px;
-}
-
-.content__img-1 , .content__img-2 {
-  position: relative;
-  left: 689px;
-}
-
-.content__img-1 {
-  top: 444px;
-}
-
-.content__img-2 {
-  top: 484px;
 }
 
 .button {
@@ -100,7 +92,7 @@ a {
   height: 58px;
   background: #408858;
   position: absolute;
-  top: 553px;
+  top: 525px;
   left: 684px;
   border-radius: 2px;
 }
