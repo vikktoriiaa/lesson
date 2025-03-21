@@ -44,6 +44,7 @@ body {
   width: 224px;
   margin-bottom: 78px;
   position: relative;
+  z-index: 3;
 
   &:nth-child(1){
     margin-right: 165px;
@@ -59,19 +60,36 @@ body {
   &:nth-child(5) {
     margin-bottom: 0;
   }
+
+  &:hover {
+    border-radius: 13px;
+  }
 }
 
 .content__card-rectangle-img {
   width: 220px;
   height: 224px;
   margin-bottom: 20px;
+  z-index: 1;
+  position: absolute;
+
+  &:hover {
+  z-index: -1;
+  }
+}
+
+.content__card-rectangle-imgs {
+  width: 293px;
+  z-index: 0;
+  position: absolute;
+  margin: auto;
 }
 
 .content__card-icon {
   position: absolute;
   top: 159px;
   left: 149px;
-  z-index: 1;
+  z-index: 3;
 
   &:hover {
     z-index: -1;
@@ -82,7 +100,7 @@ body {
   position: absolute;
   top: 159px;
   left: 149px;
-  z-index: 1;
+  z-index: 3;
   text-decoration: none;
 }
 
@@ -90,7 +108,7 @@ body {
   position: absolute;
   top: 159px;
   left: 149px;
-  z-index: 0;
+  z-index: 2;
 }
 
 .content__card-arrow {
@@ -98,7 +116,7 @@ body {
   position: absolute;
   top: 159px;
   left: 149px;
-  z-index: 0;
+  z-index: 2;
 }
 
 .content__card-name {
