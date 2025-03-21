@@ -14,7 +14,99 @@
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
+.title {
+  font: 600 40px/140% "OpenSans" , sans-serif;
+  margin: 100px auto 26px;
+  text-align: center;
+  color: #333;
+}
+
+.rectangle {
+  width: 100px;
+  height: 4px;
+  background: #2B9AD6;
+  margin: 0 auto 60px;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 1017px;
+  margin: 0 auto;
+}
+
+.content__card {
+  width: 224px;
+  margin-bottom: 78px;
+  position: relative;
+
+  &:nth-child(1){
+    margin-right: 165px;
+    width: 235px;
+  }
+  &:nth-child(2) {
+    margin-right: 165px;
+  }
+  &:nth-child(4) {
+    margin-right: 176px;
+    margin-bottom: 0;
+  }
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
+}
+
+.content__card-rectangle-img {
+  width: 220px;
+  height: 224px;
+  margin-bottom: 20px;
+}
+
+.content__card-icon {
+  position: absolute;
+  top: 159px;
+  left: 149px;
+  z-index: 1;
+
+  &:hover {
+    z-index: -1;
+    animation-delay: 5s;
+  }
+}
+.content__card-rectangle-link {
+  position: absolute;
+  top: 159px;
+  left: 149px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.content__card-circle {
+  position: absolute;
+  top: 159px;
+  left: 149px;
+  z-index: 0;
+}
+
+.content__card-arrow {
+  margin: 9px;
+  position: absolute;
+  top: 159px;
+  left: 149px;
+  z-index: 0;
+}
+
+.content__card-name {
+  font: 700 24px/140% "OpenSans" , sans-serif;
+  color: #194F94;
+}
+
+.content__card-desc {
+  font: 400 17px/150% "OpenSans" , sans-serif;
+  color: #5F5F5F;
 }
