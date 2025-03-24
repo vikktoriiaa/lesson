@@ -36,59 +36,86 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1017px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .content__card {
-  width: 224px;
+  width: 290px;
   margin-bottom: 78px;
+  margin-right: 165px;
   position: relative;
-  z-index: 3;
 
-  &:nth-child(1){
-    margin-right: 165px;
-    width: 235px;
+  &:hover .content__card-name, .content__card-desc {
+    color: #fff;
   }
-  &:nth-child(2) {
-    margin-right: 165px;
+
+  &:hover {
+    border-radius: 200px;
+    border: 1px solid #fff;
   }
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+
   &:nth-child(4) {
     margin-right: 176px;
     margin-bottom: 0;
   }
   &:nth-child(5) {
+    margin-right: 0;
     margin-bottom: 0;
   }
-
-  &:hover {
+  &:nth-child(1):hover {
+    background-image: url("images/Rectangle 6.png");
     border-radius: 13px;
+    background-size: 300px;
   }
+
+  &:nth-child(2):hover {
+    background-image: url("images/Rectangle 7.png");
+    border-radius: 13px;
+    background-size: 300px;
+  }
+
+  &:nth-child(3):hover {
+    background-image: url("images/Rectangle 8.png");
+    border-radius: 13px;
+    background-size: 300px;
+  }
+
+  &:nth-child(4):hover {
+    background-image: url("images/Rectangle 9.png");
+    border-radius: 13px;
+    background-size: 300px;
+  }
+
+  &:nth-child(5):hover {
+    background-image: url("images/Rectangle 10.png");
+    border-radius: 13px;
+    background-size: 300px;
+  }
+}
+
+.content__card-rectangle {
+  width: 300px;
+
 }
 
 .content__card-rectangle-img {
   width: 220px;
   height: 224px;
   margin-bottom: 20px;
-  z-index: 1;
-  position: absolute;
-
-  &:hover {
-  z-index: -1;
-  }
-}
-
-.content__card-rectangle-imgs {
-  width: 293px;
-  z-index: 0;
-  position: absolute;
-  margin: auto;
+  position: relative;
+  top: 13px;
+  left: 45px;
 }
 
 .content__card-icon {
   position: absolute;
-  top: 159px;
-  left: 149px;
+  top: 172px;
+  left: 190px;
   z-index: 3;
 
   &:hover {
@@ -98,33 +125,39 @@ body {
 }
 .content__card-rectangle-link {
   position: absolute;
-  top: 159px;
-  left: 149px;
-  z-index: 3;
+  top: 172px;
+  left: 190px;
+  z-index: 1;
   text-decoration: none;
 }
 
 .content__card-circle {
   position: absolute;
-  top: 159px;
-  left: 149px;
-  z-index: 2;
+  top: 172px;
+  left: 190px;
+  z-index: 1;
 }
 
 .content__card-arrow {
   margin: 9px;
   position: absolute;
-  top: 159px;
-  left: 149px;
-  z-index: 2;
+  top: 172px;
+  left: 190px;
+  z-index: 1;
 }
 
 .content__card-name {
   font: 700 24px/140% "OpenSans" , sans-serif;
   color: #194F94;
+  width: 235px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .content__card-desc {
   font: 400 17px/150% "OpenSans" , sans-serif;
   color: #5F5F5F;
+  width: 199px;
+  margin-left: 30px;
+  margin-right: 67px;
 }
