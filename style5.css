@@ -95,7 +95,7 @@
     font: 400 14px/100% "Montserrat", sans-serif;
     width: 262px;
     height: 50px;
-    margin: 30px 25px 28px;
+    margin: 30px auto 28px;
     background-color: #fff;
     
 }
@@ -133,8 +133,6 @@
     display: flex;
     justify-content: space-between;
     margin: 100px 19px 22px 15px;
-    max-width: 1309px;
-    width: 100%;
 }
 
 .contents__block-img {
