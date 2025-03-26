@@ -14,8 +14,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font: "OpenSans" , sans-serif
+}
+
 .title {
-  font: 600 40px/140% "OpenSans" , sans-serif;
+  font: 600 40px/140% var(--font);
   margin: 100px auto 26px;
   text-align: center;
   color: #333;
@@ -174,13 +178,13 @@ svg {
 }
 
 .content__card-name {
-  font: 700 24px/140% "OpenSans" , sans-serif;
+  font: 700 24px/140% var(--font);
   color: #194F94;
   margin-left: 30px;
 }
 
 .content__card-desc {
-  font: 400 17px/150% "OpenSans" , sans-serif;
+  font: 400 17px/150% var(--font);
   color: #5F5F5F;
   margin-left: 30px;
 }
