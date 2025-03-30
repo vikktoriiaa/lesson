@@ -8,15 +8,19 @@
 </head>
 <body>
   <h1 class="content__title">Форма заявки на работу в зоопарке</h1>
-    <p class="content__text">Пожалуйста, заполните форму. Обязательные поля помечены</p>
+  <p class="content__text">Пожалуйста, заполните форму. Обязательные поля помечены</p>
 
   <form class="contact">
       <fieldset class="contact__fieldset">
         <legend class="contact__title">Контактная информация</legend>
 
-        <label class="contact__label">Имя <input type="text" required></label>
-        <label class="contact__label">Телефон <input type="tel" required></label>
-        <label class="contact__label">Email <input type="email" required></label>
+        <label for="name">Имя</label>
+        <input id="name" type="text" required>
+        <label for="tel">Телефон</label>
+        <input id="tel" type="tel">
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+       
       </fieldset>
 
 
@@ -29,9 +33,11 @@
         <select id="gender">
           <option value="woman">Женщина</option>
           <option value="man">Мужчина</option>
-        </select><br>
+        </select>
+        <div class="message">
         <label for="message">Перечислите личные качества</label>
         <textarea id="message"></textarea>
+        </div>
       </fieldset>
 
       <fieldset class="animals">
@@ -48,6 +54,6 @@
       </fieldset>
     </form>
   
-    <input type="submit" value="Отправить информацию">
+    <input type="submit" value="Отправить информацию" class="button">
 </body>
 </html>
