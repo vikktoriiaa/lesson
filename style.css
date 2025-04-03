@@ -1,0 +1,73 @@
+* {
+  padding:0;
+  margin:0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 100px) 500px 100px;
+  grid-template-areas: "header header"
+                       "navigation Rights"
+                       "main Rights"
+                       "footer footer";
+border: 2px dashed #4c9abe;
+}
+
+.header {
+  grid-area: header;
+  grid-column: 1/2;
+  background-color: #f1f1b3;
+}
+
+.header-1 {
+  grid-area: header;
+  grid-column: 2/3;
+  background-color: #f1f1b3;
+}
+
+.navigation {
+  grid-area: navigation;
+  background-color: #b5b0f2;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f2c4de;
+}
+
+.right {
+  grid-area: Rights;
+  grid-row: 2/3;
+  background-color: #a6ddf1;
+}
+
+.right-1 {
+  grid-area: Rights;
+  grid-row: 3/4;
+  background-color: #a6ddf1;
+}
+
+.footer {
+  grid-area: footer;
+  grid-column: 1/2;
+  background-color: #c1f3db;
+}
+
+.footer-1 {
+  grid-area: footer;
+  grid-column: 2/3;
+  background-color: #c1f3db
+}
+
+.header, .header-1, .navigation, .main, .right, .right-1, .footer, .footer-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #4c9abe;
+  font-size: 30px;
+  font-style: bold;
+}
