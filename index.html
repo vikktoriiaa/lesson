@@ -8,26 +8,29 @@
 </head>
 <body>
   <header class="header">
-      <nav class="menu">
-        <a class="menu-logo">DudeShape</a>
-        <ul class="menu-list">
-          <li class="menu-list-item">Home</li>
-          <li class="menu-list-item">About</li>
-          <li class="menu-list-item">Features</li>
-          <li class="menu-list-item">Contact</li>
-        </ul>
-        <img src="images/loupe.svg" class="menu-img" alt="loupe">
-        <img src="images/menu.svg" class="menu-img" alt="menu">
-      </nav>
+    <a class="header__logo">DudeShape</a>
+    <nav class="header__menu">
+      <ul class="menu-list">
+        <li class="menu-list-item">Home</li>
+        <li class="menu-list-item">About</li>
+        <li class="menu-list-item">Features</li>
+        <li class="menu-list-item">Contact</li>
+      </ul>
+    </nav>
+    <div class="header__img">
+      <img src="images/loupe.svg" class="images" alt="loupe">
+      <img src="images/menu.svg" class="images" alt="menu">
+    </div>
   </header>
+
   <main class="content">
     <section class="promo">
       <img src="images/chair.png" class="promo__img" alt="furniture">
-      <section class="promo__section">
+      <div class="promo__section">
         <h1 class="promo__section-title">We Help You Make Modern Furniture</h1>
-        <p class="promo__section-text">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials</p>
+        <p class="promo__section-subtitle">A passion for inspired design. Uniquely beautiful materials. An elevated aesthetic. Crafted with the idea that great design tells a story.</p>
         <a href="#" class="promo__section-link">Explore More</a>
-      </section>
+      </div>
     </section>
 
     <section class="partners">
@@ -38,49 +41,170 @@
       <img src="images/paypal.png" class="partners__img" alt="logo-paypal">
       <img src="images/visa.png" class="partners__img" alt="logo-visa">
       <img src="images/stripe.png" class="partners__img" alt="logo-stripe">
+      <img src="images/master.svg" class="partners__img" alt="logo-mastercard">
     </section>
 
     <section class="about">
-      <img src="images/about.png" cls="about__img" alt="furniture">
-      <section class="about__section">
+      <img src="images/about.png" class="about__img" alt="furniture">
+      <div class="about__section">
         <h2 class="about__section-title">About Us</h2>
-        <p class="about__section-text">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials</p>
+        <p class="about__section-subtitle">Our own production allows us to realize almost any premium-class built-in and cabinet furniture made of solid alder, oak, ash or MDF, including according to the Customer's design project.</p>
         <ul class="about__section-list">
           <li class="about__section-img">
             <img src="images/icon-1.svg" alt="icon-1">
           </li>
           <li class="about__section-term">Best Quality</li>
-          <li class="about__section-item">All of our furniture uses the best materials and choices</li>
+          <li class="about__section-item">We provide full control over every step of manufacturing our products.</li>
           <li class="about__section-img">
             <img src="images/icon-2.svg" alt="icon-2">
           </li>
           <li class="about__section-term">100% Secure</li>
-          <li class="about__section-item">All of our furniture uses the best materials and choices</li>
+          <li class="about__section-item">All goods are packed and arrive safely and in excellent condition.</li>
           <li class="about__section-img">
             <img src="images/icon-3.svg" alt="icon-3">
           </li>
           <li class="about__section-term">Free Shopping</li>
-          <li class="about__section-item">All of our furniture uses the best materials and choices</li>
+          <li class="about__section-item">We offer fast and profitable delivery.</li>
         </ul>
-      </section>
+      </div>
     </section>
 
     <section class="demand">
-      <h2 class="demand-title">Our Popular Furniture</h2>
-      <p class="demand-text">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices for our customers.</p>
-      <img src="images/arrow-1.svg" class="demand-img" alt="arrow">
-      <img src="images/arrow-2.svg" class="demand-img" alt="arrow">
+      <h2 class="demand__title">Our Popular Furniture</h2>
+      <p class="demand__subtitle">Our quality guarantees include a full range of documents required for the import and export of goods, as well as for successful business in the global market. We provide you with reliability and confidence.</p>
+      <img src="images/arrow-1.svg" class="demand__img" alt="arrow">
+      <img src="images/arrow-2.svg" class="demand__img" alt="arrow">
       <div class="demand__section">
-        <section>
-          
-        </section>
-
+        <img src="images/image-1.png" class="demand__section-img" alt="furniture">
+        <p class="demand__section-text">White Swan Chair</p>
+        <img src="images/group-1.svg" class="demand__section-images" alt="icon">
+        <img src="images/group-3.svg" class="demand__section-images" alt="icon">
+        <span class="demand__section-price">$40</span>
+        <button type="button" class="demand__section-btn">Buy Now</button>
+      </div>
+      <div class="demand__section">
+        <img src="images/image-2.png" class="demand__section-img" alt="furniture">
+        <p class="demand__section-text">White Swan Table</p>
+        <img src="images/group-2.svg" class="demand__section-images" alt="icon">
+        <img src="images/group-3.svg" class="demand__section-images" alt="icon">
+        <span class="demand__section-price">$40</span>
+        <button type="button" class="demand__section-btn">Buy Now</button>
+      </div>
+      <div class="demand__section">
+        <img src="images/image-3.png" class="demand__section-img" alt="furniture">
+        <p class="demand__section-text">White Swan Ottoman</p>
+        <img src="images/group-2.svg" class="demand__section-images" alt="icon">
+        <img src="images/group-3.svg" class="demand__section-images" alt="icon">
+        <span class="demand__section-price">$40</span>
+        <button type="button" class="demand__section-btn">Buy Now</button>
       </div>
     </section>
-    <section class="furniture"></section>
-    <section class="customers"></section>
-    <section class="feedback"></section>
+
+    <section class="furniture">
+      <h2 class="furniture__title">All Furniture</h2>
+      <ul class="furniture__list">
+        <li class="list__item">Shop By Room</li>
+        <li class="list__item">Shop By Category</li>
+        <li class="list__item">Shop By Style</li>
+      </ul>
+      <img src="images/furniture-1.png" class="furniture__img" alt="furniture">
+      <img src="images/furniture-2.png" class="furniture__img" alt="furniture">
+      <img src="images/furniture-3.png" class="furniture__img" alt="furniture">
+      <img src="images/furniture-4.png" class="furniture__img" alt="furniture">
+      <img src="images/furniture-5.png" class="furniture__img" alt="furniture">
+      <img src="images/furniture-6.png" class="furniture__img" alt="furniture">
+      <div class="furniture__section">
+        <div class="section__item">
+          <img src="images/sofa.svg" class="section__item-img" alt="icon">
+          <p class="section__item-text">Living Room</p>
+        </div>
+        <div class="section__item">
+          <img src="images/kitchen.svg" class="section__item-img" alt="icon">
+          <p class="section__item-text">Kitchen</p>
+        </div>
+        <div class="section__item">
+          <img src="images/dining.svg" class="section__item-img" alt="icon">
+          <p class="section__item-text">Dining Room</p>
+        </div>
+        <div class="section__item">
+          <img src="images/office.svg" class="section__item-img" alt="icon">
+          <p class="section__item-text">Office</p>
+        </div>
+        <div class="section__item">
+          <img src="images/bed.svg" class="section__item-img" alt="icon">
+          <p class="section__item-text">Bed Room</p>
+        </div>
+        <div class="section__item">
+          <img src="images/hallway.svg" class="section__item-img" alt="icon">
+          <p class="section__item-text">Hallway</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="customers">
+      <img src="images/images.png" class="customers__img" alt="furniture">
+      <h2 class="customers__title">Our customers are verry importan to us</h2>
+      <p class="customers__text">We appreciate every opinion. Your feedback shapes our product range and service.  Tell us about your experience and get exclusive offers for participation.</p>
+      <div class="customers__review">
+        <img src="images/customer.png" class="review-img" alt="customer">
+        <span class="review-custom">Mh Jibon</span>
+        <img src="images/star.svg" class="review-icon" alt="icon">
+        <span class="review-num">4.8</span>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <h2 class="feedback__title">Subscribe to get the latest news about us</h2>
+      <p class="feedback__text">Secret discounts are waiting for you — leave your email!</p>
+      <input type="email" name="email" placeholder="Enter your email">
+      <button type="submit">Register</button>
+    </section>
   </main>
-  <footer class="footer"></footer>
+
+  <footer class="footer">
+    <div class="footer__section">
+      <h3 class="section__title">DudeShape</h3>
+      <p class="section__text">All of our furniture uses the best materials and choices for our customers.</p>
+      <h3 class="section__subtitle">Follow Us :</h3>
+      <a href="#" class="section__link">
+        <img src="images/facebook.svg" class="section__link-img" alt="logo-facebook">
+      </a>
+      <a href="#" class="section__link">
+        <img src="images/twitter.svg" class="section__link-img" alt="logo-twitter">
+      </a>
+      <a href="#" class="section__link">
+        <img src="images/youtube.svg" class="section__link-img" alt="logo-youtube">
+      </a>
+    </div>
+    <div class="footer__list">
+      <h3 class="list__title">Take a tour</h3>
+      <ul class="list__list">
+        <li class="list__item">Features</li>
+        <li class="list__item">Pricing</li>
+        <li class="list__item">Product</li>
+        <li class="list__item">Support</li>
+      </ul>
+    </div>
+    <div class="footer__list">
+      <h3 class="list__title">Our company</h3>
+      <ul class="list__list">
+        <li class="list__item">About Us</li>
+        <li class="list__item">Blog</li>
+        <li class="list__item">Media</li>
+        <li class="list__item">Contact Us</li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h3 class="section__title">Subscribe</h3>
+      <p class="section__text">Subscribe to get the latest news from us</p>
+      <input type="email" name="email" placeholder="Email Address">
+    </div>
+
+    <svg width="1440" height="2" viewBox="0 0 1440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="0.91748" width="1440" height="1" fill="#407980"/>
+    </svg>
+
+    <p class="footer__text">Copyright @ 2021. Crafted with love.</p> 
+  </footer>
 </body>
 </html>
