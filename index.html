@@ -9,12 +9,15 @@
 <body>
   <header class="header">
     <a class="header__logo">DudeShape</a>
+    <div class="header__burger">
+      <span></span>
+    </div>
     <nav class="header__menu">
       <ul class="menu-list">
-        <li class="menu-list-item">Home</li>
-        <li class="menu-list-item">About</li>
-        <li class="menu-list-item">Features</li>
-        <li class="menu-list-item">Contact</li>
+        <li class="menu-list-item"><a href="#home" class="menu-list-item">Home</a></li>
+        <li class="menu-list-item"><a href="#about" class="menu-list-item">About</a></li>
+        <li class="menu-list-item"><a href="#features" class="menu-list-item">Features</a></li>
+        <li class="menu-list-item"><a href="#contact" class="menu-list-item">Contact</a></li>
       </ul>
     </nav>
     <div class="header__img">
@@ -23,7 +26,7 @@
     </div>
   </header>
 
-  <main class="content">
+  <main class="content" id="home">
     <section class="promo">
       <img src="images/chair.png" class="promo__img" alt="furniture">
       <div class="promo__section">
@@ -33,7 +36,7 @@
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="features">
       <h2 class="partners__title">Trusted by 20,000+ companies</h2>
       <img src="images/mastercard.png" class="partners__img" alt="logo-mastercard">
       <img src="images/airbnb.png" class="partners__img" alt="logo-airbnb">
@@ -41,11 +44,9 @@
       <img src="images/paypal.png" class="partners__img" alt="logo-paypal">
       <img src="images/visa.png" class="partners__img" alt="logo-visa">
       <img src="images/stripe.png" class="partners__img" alt="logo-stripe">
-      <img src="images/master.svg" class="partners__img" alt="logo-mastercard">
     </section>
 
-    <section class="about">
-      <div class="about__rect"></div>
+    <section class="about" id="about">
       <img src="images/about.png" class="about__img" alt="furniture">
       <div class="about__section">
         <h2 class="about__section-title">About Us</h2>
@@ -75,30 +76,48 @@
       <p class="demand__subtitle">Our quality guarantees include a full range of documents required for the import and export of goods, as well as for successful business in the global market. We provide you with reliability and confidence.</p>
       <img src="images/arrow-1.svg" class="demand__img" alt="arrow">
       <img src="images/arrow-2.svg" class="demand__img" alt="arrow">
-      <div class="demand__content">
-        <div class="demand__section">
-          <img src="images/image-1.png" class="demand__section-img" alt="furniture">
-          <p class="demand__section-text">White Swan Chair</p>
-          <img src="images/group-1.svg" class="demand__section-images" alt="icon">
-          <img src="images/group-3.svg" class="demand__section-images" alt="icon">
-          <span class="demand__section-price">$40</span>
-          <button type="button" class="demand__section-btn">Buy Now</button>
+      <div class="cards">
+        <div class="demand__content center">
+          <div class="demand__section">
+            <img src="images/image-1.png" class="demand__section-img" alt="furniture">
+          </div>
+          <div class="back">
+            <div class="back-content center">
+              <p class="demand__section-text">White Swan Chair</p>
+              <img src="images/group-1.svg" class="demand__section-images" alt="icon">
+              <img src="images/group-3.svg" class="demand__section-images" alt="icon">
+              <span class="demand__section-price">$40</span>
+              <button type="button" class="demand__section-btn">Buy Now</button>
+            </div>
+          </div>
         </div>
-        <div class="demand__section">
-          <img src="images/image-2.png" class="demand__section-img" alt="furniture">
-          <p class="demand__section-text">White Swan Table</p>
-          <img src="images/group-2.svg" class="demand__section-images" alt="icon">
-          <img src="images/group-3.svg" class="demand__section-images" alt="icon">
-          <span class="demand__section-price">$40</span>
-          <button type="button" class="demand__section-btn">Buy Now</button>
+        <div class="demand__content center">
+          <div class="demand__section">
+            <img src="images/image-2.png" class="demand__section-img" alt="furniture">
+          </div>
+          <div class="back">
+            <div class="back-content center">
+              <p class="demand__section-text">White Swan Chair</p>
+              <img src="images/group-2.svg" class="demand__section-images" alt="icon">
+              <img src="images/group-3.svg" class="demand__section-images" alt="icon">
+              <span class="demand__section-price">$40</span>
+              <button type="button" class="demand__section-btn">Buy Now</button>
+            </div>
+          </div>
         </div>
-        <div class="demand__section">
-          <img src="images/image-3.png" class="demand__section-img" alt="furniture">
-          <p class="demand__section-text">White Swan Ottoman</p>
-          <img src="images/group-2.svg" class="demand__section-images" alt="icon">
-          <img src="images/group-3.svg" class="demand__section-images" alt="icon">
-          <span class="demand__section-price">$40</span>
-          <button type="button" class="demand__section-btn">Buy Now</button>
+        <div class="demand__content center">
+          <div class="demand__section">
+            <img src="images/image-3.png" class="demand__section-img" alt="furniture">
+          </div>
+          <div class="back">
+            <div class="back-content center">
+              <p class="demand__section-text">White Swan Chair</p>
+              <img src="images/group-2.svg" class="demand__section-images" alt="icon">
+              <img src="images/group-3.svg" class="demand__section-images" alt="icon">
+              <span class="demand__section-price">$40</span>
+              <button type="button" class="demand__section-btn">Buy Now</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -106,17 +125,17 @@
     <section class="furniture">
       <h2 class="furniture__title">All Furniture</h2>
       <ul class="furniture__list">
-        <li class="list__item">By Room</li>
-        <li class="list__item">By Category</li>
-        <li class="list__item">By Style</li>
+        <li class="list__item is-active" data-tab="room">By Room</li>
+        <li class="list__item" data-tab="category">By Category</li>
+        <li class="list__item" data-tab="style">By Style</li>
       </ul>
-      <div class="furniture__section">
-          <img src="images/furniture-1.png" class="furniture__img" alt="furniture">
-          <img src="images/furniture-2.png" class="furniture__img" alt="furniture">
-          <img src="images/furniture-3.png" class="furniture__img" alt="furniture">
-          <img src="images/furniture-4.png" class="furniture__img is-active" alt="furniture">
-          <img src="images/furniture-5.png" class="furniture__img" alt="furniture">
-          <img src="images/furniture-6.png" class="furniture__img" alt="furniture">
+      <div class="furniture__section is-active" id="room">
+        <img src="images/furniture-1.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-2.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-3.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-4.png" class="furniture__img is-active" alt="furniture">
+        <img src="images/furniture-5.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-6.png" class="furniture__img" alt="furniture">
         <div class="section__item">
           <div class="section__item-item">
             <img src="images/sofa.svg" class="section__item-img" alt="icon">
@@ -142,7 +161,61 @@
             <img src="images/hallway.svg" class="section__item-img" alt="icon">
             <p class="section__item-text">Hallway</p>
           </div>
+        </div>  
+      </div>
+
+      <div class="furniture__section" id="category">
+        <img src="images/furniture-12.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-22.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-32.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-42.png" class="furniture__img is-active" alt="furniture">
+        <div class="section__item">
+          <div class="section__item-item">
+            <img src="images/bed.svg" class="section__item-img" alt="icon">
+            <p class="section__item-text">Upholstered Furniture</p>
+          </div>
+          <div class="section__item-item">
+            <img src="images/hallway.svg" class="section__item-img" alt="icon">
+            <p class="section__item-text">Cabinet Furniture</p>
+          </div>
+          <div class="section__item-item">
+            <img src="images/dining.svg" class="section__item-img" alt="icon">
+            <p class="section__item-text">Kitchen Furniture</p>
+          </div>
+          <div class="section__item-item is-active">
+            <img src="images/office.svg" class="section__item-img" alt="icon">
+            <p class="section__item-text">Office Furniture</p>
+          </div>
         </div>
+      </div>
+
+      <div class="furniture__section is-active" id="style">
+        <img src="images/furniture-13.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-23.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-33.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-43.png" class="furniture__img is-active" alt="furniture">
+        <img src="images/furniture-53.png" class="furniture__img" alt="furniture">
+        <img src="images/furniture-63.png" class="furniture__img" alt="furniture">
+        <div class="section__item">
+          <div class="section__item-item">
+            <p class="section__item-text">Classic</p>
+          </div>
+          <div class="section__item-item">
+            <p class="section__item-text">Gothic</p>
+          </div>
+          <div class="section__item-item">
+            <p class="section__item-text">Modern</p>
+          </div>
+          <div class="section__item-item is-active">
+            <p class="section__item-text">Minimalism</p>
+          </div>
+          <div class="section__item-item">
+            <p class="section__item-text">Baroque</p>
+          </div>
+          <div class="section__item-item">
+            <p class="section__item-text">High-tech</p>
+          </div>
+        </div>  
       </div>
     </section>
 
@@ -150,7 +223,7 @@
       <div class="custom"></div>
       <img src="images/images.png" class="customers__img" alt="furniture">
       <div class="customers__customers">
-        <h2 class="customers__title">Our customers are verry importan to us!</h2>
+        <h2 class="customers__title">Our customers are verry important to us!</h2>
         <p class="customers__text">We appreciate every opinion. Your feedback shapes our product range and service.  Tell us about your experience and get exclusive offers for participation.</p>
         <img src="images/customer.png" class="review-img" alt="customer">
         <div class="customers__review">
@@ -169,85 +242,52 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__section">
-      <h3 class="section__title">DudeShape</h3>
-      <p class="section__text">All of our furniture uses the best materials and choices for our customers.</p>
-      <h3 class="section__subtitle">Follow Us :</h3>
-      <a href="#" class="section__link">
-        <img src="images/facebook.svg" class="section__link-img" alt="logo-facebook">
-      </a>
-      <a href="#" class="section__link">
-        <img src="images/twitter.svg" class="section__link-img" alt="logo-twitter">
-      </a>
-      <a href="#" class="section__link">
-        <img src="images/youtube.svg" class="section__link-img" alt="logo-youtube">
-      </a>
+  <footer class="footer" id="contact">
+    <div class="footer__content">
+      <div class="footer__section">
+        <h3 class="section__title">DudeShape</h3>
+        <p class="section__text">All of our furniture uses the best materials and choices for our customers.</p>
+        <h3 class="section__subtitle">Follow Us :</h3>
+        <a href="#" class="section__link">
+          <img src="images/facebook.svg" class="section__link-img" alt="logo-facebook">
+        </a>
+        <a href="#" class="section__link">
+          <img src="images/twitter.svg" class="section__link-img" alt="logo-twitter">
+        </a>
+        <a href="#" class="section__link">
+          <img src="images/youtube.svg" class="section__link-img" alt="logo-youtube">
+        </a>
+      </div>
+      <div class="footer__list">
+        <h3 class="list__title">Take a tour</h3>
+        <ul class="list__list">
+          <li class="list__items"><a href="#">Features</a></li>
+          <li class="list__items"><a href="#">Pricing</a></li>
+          <li class="list__items"><a href="#">Product</a></li>
+          <li class="list__items"><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__list">
+        <h3 class="list__title">Our company</h3>
+        <ul class="list__list">
+          <li class="list__items"><a href="#">About Us</a></li>
+          <li class="list__items"><a href="#">Blog</a></li>
+          <li class="list__items"><a href="#">Media</a></li>
+          <li class="list__items"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="list__title">Subscribe</h3>
+        <p class="section__text">Subscribe to get the latest news from us</p>
+        <div class="email-1">
+          <input type="email" name="email" class="email-1" placeholder="Email Address">
+        </div>
+      </div>
     </div>
-    <div class="footer__list">
-      <h3 class="list__title">Take a tour</h3>
-      <ul class="list__list">
-        <li class="list__item">Features</li>
-        <li class="list__item">Pricing</li>
-        <li class="list__item">Product</li>
-        <li class="list__item">Support</li>
-      </ul>
-    </div>
-    <div class="footer__list">
-      <h3 class="list__title">Our company</h3>
-      <ul class="list__list">
-        <li class="list__item">About Us</li>
-        <li class="list__item">Blog</li>
-        <li class="list__item">Media</li>
-        <li class="list__item">Contact Us</li>
-      </ul>
-    </div>
-    <div class="footer__section">
-      <h3 class="section__title">Subscribe</h3>
-      <p class="section__text">Subscribe to get the latest news from us</p>
-      <input type="email" name="email" placeholder="Email Address">
-    </div>
-
-    <svg width="1440" height="2" viewBox="0 0 1440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect y="0.91748" width="1440" height="1" fill="#407980"/>
-    </svg>
 
     <p class="footer__text">Copyright @ 2021. Crafted with love.</p> 
   </footer>
-  <script type="text/javascript">
-    const sectionItems = document.querySelectorAll('.section__item-item');
-    const furnitureImages = document.querySelectorAll('.furniture__img');
-
-    const imageMap = {
-      'Living Room': 'images/furniture-1.png',
-      'Kitchen': 'images/furniture-2.png',
-      'Dining Room': 'images/furniture-3.png',
-      'Office': 'images/furniture-4.png',
-      'Bed Room': 'images/furniture-5.png',
-      'Hallway': 'images/furniture-6.png'
-    };
-
-    const clearActiveStates = () => {
-      sectionItems.forEach(item => item.classList.remove('is-active'));
-      furnitureImages.forEach(img => img.classList.remove('is-active'));
-    };
-
-    sectionItems.forEach(item => {
-        item.addEventListener('click', () => {
-          clearActiveStates();
-          item.classList.add('is-active');
-
-          const roomName = item.querySelector('.section__item-text').textContent;
-          const furnitureImageSrc = imageMap[roomName];
-
-          furnitureImages.forEach(img => {
-            if (img.src.includes(furnitureImageSrc)) {
-                img.classList.add('is-active');
-            }
-          });
-        });
-    });
-
-  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
