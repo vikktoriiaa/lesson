@@ -1,0 +1,149 @@
+@font-face{
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Regular.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*style header*/
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 27px calc(50% - 720px);
+  }
+  
+  .menu__list {
+    display: flex;
+  }
+
+ .header__logo-img {
+    width: 132px;
+ }
+
+ .menu__item {
+    margin-right: 48px;
+
+ &:last-child {
+    margin: 0;
+  }
+}
+
+.menu__link {
+    font: 400 16px/32px "Mulish", sans-serif;
+    color: #0A2647;
+}
+
+.menu__item.menu__item_active {
+     > .menu__link {
+    font-weight: 600;
+}
+}
+.header__btn {
+    padding: 0 32px;
+    height: 48px;
+}
+
+/*style section preview*/
+.preview{
+  padding: 164px calc(50% - 720px) 20px;
+  background: #33405c;
+  height: 800px;
+  padding: 100px 40px;
+}
+.preview__title{
+    color: #fff;
+    font: 600 72px/96px "Mulish", sans-serif;
+    max-width: 936px;
+
+}
+.preview__subtitle{
+    color: #fff;
+    font:400 16px/26px "Mulish", sans-serif;
+    margin-top: 24px;
+    max-width: 579px;
+}
+.preview__link, .header__btn{
+    color:#fff;
+    background: #D61F00;
+    font: 600 16px/32px "Mulish", sans-serif;
+}
+
+.preview__link {
+    padding:16px 40px;
+    display: inline-block;
+    margin-top: 72px;
+}
+.advantages{
+    margin-top: 120px;
+    
+}
+.advantages__item{
+    padding: 32px 24px;
+    max-width: 296px;
+    width: 100%;
+    background: #fff;
+    display: inline-block;
+    margin-right: 16px;
+&:last-child{
+    margin: 0;
+}
+}
+.advantages__icon{
+    width: 64px;
+    height: 64px;
+    background: #D7E5F0;
+    border-radius: 50%;
+}
+.advantages__title{
+    margin-top: 40px;
+    color:#0A2647;
+    font:600 24px/38px "Mulish", sans-serif;
+}
+.advantages__decs{
+    margin-top: 16px;
+    font:400 16px/26px "Mulish", sans-serif; 
+    color: #A7A7A7;
+}
+.advantages__link{
+    display: inline-block;
+    margin-top: 16px;
+    color: #D61F00;
+    font:600 16px/32px "Mulish", sans-serif;
+}
+.advantages__item_active{
+    background: #06163A;
+
+    *{
+color: #fff;
+    }
+}
