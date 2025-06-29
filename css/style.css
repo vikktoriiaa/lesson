@@ -91,6 +91,9 @@ a {
 .menu-list-item {
   font: 400 16px/1 var(--font);
   color: #161616;
+  &:hover {
+    color: #244D4D;
+  }
 }
 
 .images {
